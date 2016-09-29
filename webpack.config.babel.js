@@ -17,7 +17,7 @@ let config = {
                 loaders: ["style", "css"]
             },
             {
-                test: /\.(tff|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+                test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
                 loaders: ["file-loader"]
             }
         ],

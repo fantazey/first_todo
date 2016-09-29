@@ -20,7 +20,7 @@ mongoose.connection.on( "error", function() {
 } );
 // App configuration
 let app = express(); // create app instance
-app.set( "post", process.env.PORT || 3000 );
+app.set( "port", process.env.PORT || 3000 );
 app.set( "views", path.join( __dirname, "..", "views") );
 app.set( "views_engine", "jade" );
 app.use(
