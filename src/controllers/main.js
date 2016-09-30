@@ -17,7 +17,7 @@ let mainController = {
     },
     postNewTodo: ( request, response ) => {
         Todo.create( {
-            text: request.params.text,
+            text: request.body.text,
             done: false
         }, ( err, todo ) => {
             if ( err ) {

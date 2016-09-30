@@ -22,7 +22,7 @@ mongoose.connection.on( "error", function() {
 let app = express(); // create app instance
 app.set( "port", process.env.PORT || 3000 );
 app.set( "views", path.join( __dirname, "..", "views") );
-app.set( "views_engine", "jade" );
+app.set( "view engine", "jade" );
 app.use(
     express.static(
         path.join( __dirname, "..", "public" )
@@ -40,6 +40,6 @@ app.delete( "/todos:id", mainController.deleteTodo );
 //start app
 app.listen(
     app.get("port"), function () {
-        console.log( `App listening port ${ app.get( 'port' ) }!` );
+        console.log( `App listening port ${ app.get( "port" ) }!` );
     }
 );

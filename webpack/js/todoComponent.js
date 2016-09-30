@@ -33,7 +33,7 @@ class TodoComponent {
         )
     }
 }
-TodoService.annotations = [
+TodoComponent.annotations = [
     new Component(
         {
             selector: "todo-app", // tag to show app
